@@ -29,11 +29,14 @@ def find_len(seq):
     return len(poly)
 
 
+find_len(inlist)
+shorter = poly
+
 minlen = 999999999999999999999999999
 for c in ascii_lowercase:
     low_o = ord(c)
     up_o = ord(c.upper())
-    l = [i for i in inlist if i != low_o and i != up_o]
+    l = [i for i in shorter if i != low_o and i != up_o]
     clen = find_len(l)
     minlen = min(minlen, clen)
 
